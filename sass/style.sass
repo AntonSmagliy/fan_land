@@ -18,7 +18,12 @@ header
 .footer_container
 	width: 90%
 	max-width: 1550px
+	justify-content: space-around
+	flex-wrap: wrap
+	margin: 0 auto
+	display: flex
 	.footer_logo
+		width: 25%
 		h2
 			color: #333333
 			font-family: "Lato - Black"
@@ -35,13 +40,40 @@ header
 			display: flex
 			i
 				display: block
-				width: 50px
+				min-width: 50px
 				height: 50px
 				border-radius: 25px
 				background-color: #333333
 				color: #fff
 				font-size: 30px
+				margin-right: 20px
 			i::before
 				margin-left: 15px
 				display: block
 				padding-top: 10px
+	.footer_text
+		width: 25%
+		color: #333333
+		font-family: "Lato - Thin"
+		font-size: 17px
+		font-weight: 400
+	.footer_text1
+		width: 339px
+	.footer_text2
+		width: 341px
+	.footer_text3
+		width: 262px
+.running_line
+	background-color: #ff0000
+	.running_line_container
+		.ticker
+			width: 100%
+			ul
+				padding: 20px 0px!important
+				li
+					display: inline-block
+					color: #ffffff
+					font-family: "Lato - Black"
+					font-size: 42px
+					font-weight: 400
+					margin-right: 70px

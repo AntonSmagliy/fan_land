@@ -17,32 +17,65 @@ header {
 
 .footer_container {
   width: 90%;
-  max-width: 1550px; }
-  .footer_container .footer_logo h2 {
-    color: #333333;
-    font-family: "Lato - Black";
-    font-size: 67px;
-    font-weight: 400; }
-    .footer_container .footer_logo h2 span {
-      color: #ff0000; }
-  .footer_container .footer_logo p {
+  max-width: 1550px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex; }
+  .footer_container .footer_logo {
+    width: 25%; }
+    .footer_container .footer_logo h2 {
+      color: #333333;
+      font-family: "Lato - Black";
+      font-size: 67px;
+      font-weight: 400; }
+      .footer_container .footer_logo h2 span {
+        color: #ff0000; }
+    .footer_container .footer_logo p {
+      color: #333333;
+      font-family: "Lato - Thin";
+      font-size: 17px;
+      font-weight: 400; }
+    .footer_container .footer_logo .footer_icons {
+      display: flex; }
+      .footer_container .footer_logo .footer_icons i {
+        display: block;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #333333;
+        color: #fff;
+        font-size: 30px;
+        margin-right: 20px; }
+      .footer_container .footer_logo .footer_icons i::before {
+        margin-left: 15px;
+        display: block;
+        padding-top: 10px; }
+  .footer_container .footer_text {
+    width: 25%;
     color: #333333;
     font-family: "Lato - Thin";
     font-size: 17px;
     font-weight: 400; }
-  .footer_container .footer_logo .footer_icons {
-    display: flex; }
-    .footer_container .footer_logo .footer_icons i {
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
-      background-color: #333333;
-      color: #fff;
-      font-size: 30px; }
-    .footer_container .footer_logo .footer_icons i::before {
-      margin-left: 15px;
-      display: block;
-      padding-top: 10px; }
+  .footer_container .footer_text1 {
+    width: 339px; }
+  .footer_container .footer_text2 {
+    width: 341px; }
+  .footer_container .footer_text3 {
+    width: 262px; }
+
+.running_line {
+  background-color: #ff0000; }
+  .running_line .running_line_container .ticker {
+    width: 100%; }
+    .running_line .running_line_container .ticker ul {
+      padding: 20px 0px !important; }
+      .running_line .running_line_container .ticker ul li {
+        display: inline-block;
+        color: #ffffff;
+        font-family: "Lato - Black";
+        font-size: 42px;
+        font-weight: 400;
+        margin-right: 70px; }
 
 /*# sourceMappingURL=style.css.map */
