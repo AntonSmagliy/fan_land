@@ -10,6 +10,14 @@
 	src: url("../fonts/LatoBold.eot?#iefix")format("embedded-opentype"), url("../fonts/LatoBold.woff") format("woff"), url("../fonts/LatoBold.ttf") format("truetype")
 	font-style: normal
 	font-weight: normal
+@font-face
+	font-family: "LatoLight"
+	src: url("../fonts/LatoLight.eot")
+	src: url("../fonts/LatoLight.eot?#iefix")format("embedded-opentype"), url("../fonts/LatoLight.woff") format("woff"), url("../fonts/LatoLight.ttf") format("truetype")
+	font-style: normal
+	font-weight: normal
+img
+	max-width: 100%
 html
 	font-size: 10px
 .clearfix::after
@@ -27,6 +35,7 @@ header
 		display: flex
 		justify-content: space-between
 		padding-top: 35px
+		margin-bottom: 175px
 		.logo
 			display: block
 			font-family: 'Lato', sans-serif
@@ -34,11 +43,8 @@ header
 			color: #303030
 			text-decoration: none
 			font-size: 4.2rem
-			
-			
 			span
 				color: #d22222
-
 		nav
 			ul
 				margin: 0
@@ -57,12 +63,130 @@ header
 		text-align: center
 		color: #333333
 		font-size: 5rem
-		font-family: 'Lato', sans-serif
-		font-weight: 300
+		font-family: "LatoLight", sans-serif
+		margin-bottom: 25px
+		span
+			font-weight: 900
 	h1
 		text-align: center
+		font-size: 22rem
+		padding: 0
+		margin: 0
+		font-family: 'Lato', sans-serif
+		font-weight: 900
+		letter-spacing: -25px
+		color: #333
+		line-height: 170px
 		
-						
+#black_sec
+	background: url(../img/bg-black.png) no-repeat 50% 50%/cover
+	// height: 450px
+	// overflow: hidden
+	padding: 50px 0px
+	position: relative
+	padding-bottom: 140px
+	
+											
+	.container_black
+		width: 90%
+		max-width: 1520px
+		margin: 0 auto
+	.offer_black
+		display: flex
+		justify-content: center
+		align-items: center
+		
+		.black_img
+			margin-right: 60px
+			// overflow: hidden
+			position: relative
+			width: 100%
+			height: 100%
+			img
+				// position: absolute
+				// // top: -100px
+				// left: 0
+				// bottom: 0
+				margin-top: -85px
+				// height: 100%
+				// width: auto
+				// overflow: hidden
+				
+		.black_info
+			font-size: 2.9rem
+			color: #fff
+			
+			font-family: 'Lato', sans-serif
+			font-weight: 400
+			p
+				margin-bottom: 35px
+				line-height: 35px
+				width: 435px
+				
+				span
+					color: #d22222
+	.big__black_abs
+		padding: 25px 0px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35)
+		background: url(../img/bg-black.png) repeat 50% 50% 
+		.black_list
+			width: 90%
+			max-width: 1520px
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.econom_cash
+				display: flex
+				align-items: center
+				&:after
+					content: ""
+					height: 70px
+					width: 1px
+					background: #d22222
+					margin-left: 30px
+				p
+					font-size: 3.3rem
+					color: #fff
+					font-family: 'Lato', sans-serif
+					font-weight: 400
+					margin-left: 40px
+					
+			.casino
+				margin-left: 25px
+				p
+					color: #ffffff
+					font-family: 'Lato', sans-serif
+					font-size: 2.5rem
+					font-weight: 300
+					max-width: 430px
+			.image_prev
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.fonts_image
+					border-left: 1px solid #d22222
+					margin-left: 15px
+					padding-left: 15px
+#rememb
+	background: url(../img/4-layers.png) no-repeat 50% 50%/cover
+	height: 960px
+	.rememb_container
+		width: 90%
+		max-width: 1520px
+		margin: 0 auto
+	.rem_block
+		h2
+			font-size: 7.5rem
+			font-family: 'Lato', sans-serif
+			font-weight: 400
+#quest
+	height: 960px
+	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
 
 .footer_container
 	width: 90%
