@@ -1,6 +1,19 @@
 header {
-  background: red;
-  height: 100vh; }
+  background: #f0f0f0; }
+  header .container_head {
+    width: 90%;
+    max-width: 1520px;
+    margin: 0 auto; }
+  header .top_line {
+    display: flex;
+    justify-content: space-between; }
+    header .top_line .logo {
+      display: block; }
+    header .top_line nav ul {
+      margin: 0;
+      padding: 0; }
+      header .top_line nav ul li {
+        float: left; }
 
 .footer_container {
   width: 90%;
