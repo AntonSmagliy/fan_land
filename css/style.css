@@ -228,8 +228,43 @@ header h1 {
   max-width: 1520px;
   margin: 0 auto;
 }
+#rememb .rem_block {
+  width: 600px;
+  float: right;
+  margin-top: 170px;
+}
 #rememb .rem_block h2 {
   font-size: 7.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 80px 0px;
+  padding-right: 50px;
+  background: url(../img/zero.png) no-repeat 60% 50%;
+  position: relative;
+}
+#rememb .rem_block h2:before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 250px;
+  top: 50%;
+  margin-top: 2px;
+}
+#rememb .rem_block h2:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 300px;
+  top: 50%;
+  margin-top: 2px;
+}
+#rememb .rem_block p {
+  color: #333333;
+  font-size: 3.3rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
@@ -237,6 +272,126 @@ header h1 {
 #quest {
   height: 960px;
   background: url(../img/2-layers5.png) no-repeat 50% 50%/cover;
+}
+#quest .quest_container {
+  width: 90%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+#quest .quest_offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#quest .quest_offer .quest_info {
+  width: 915px;
+  margin-top: 60px;
+}
+#quest .quest_offer .quest_info h2 {
+  font-size: 7.5rem;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background: url(../img/second.png) no-repeat 0% 50%;
+  padding: 80px 0px;
+  position: relative;
+}
+#quest .quest_offer .quest_info h2:before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 200px;
+  top: 50%;
+  margin-top: 2px;
+}
+#quest .quest_offer .quest_info h2:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 250px;
+  top: 50%;
+  margin-top: 2px;
+}
+#quest .quest_offer .quest_info ul {
+  display: block;
+  margin-left: 10px;
+  margin-top: 90px;
+}
+#quest .quest_offer .quest_info ul li {
+  font-size: 3.5rem;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  display: block;
+}
+#quest .quest_offer .quest_info ul .inf_secq {
+  color: #d22222;
+  border-left: 2px solid #d22222;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+#quest .quest_offer .quest_info ul p {
+  font-size: 2.9rem;
+  color: #535353;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 45px 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#quest .quest_offer .quest_info ul p:before {
+  content: " ";
+  width: 30px;
+  display: block;
+  margin-right: 20px;
+  height: 1px;
+  color: red;
+  padding-right: 15px;
+  margin-top: 15px;
+  background: red;
+}
+#quest .quest_offer .quest_right .q_rig_img img {
+  margin-bottom: -2px;
+  margin-left: 10px;
+}
+#quest .quest_offer .quest_right .times {
+  background: #d22222;
+  padding: 15px;
+  position: absolute;
+  width: 1500px;
+  -webkit-box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67);
+          box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67);
+}
+#quest .quest_offer .quest_right .times h4 {
+  color: #fff;
+  font-size: 3.7rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#quest .quest_offer .quest_right .times .timer span {
+  font-size: 10rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .footer_container {
@@ -520,12 +675,6 @@ header h1 {
 .feedback .feedback_container .feedback_form .choose_sex .sex:hover {
   background-color: #ff0000;
   color: #ffffff;
-}
-
-@media all and (max-width: 1400px) {
-  body {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

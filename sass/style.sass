@@ -178,18 +178,167 @@ header
 #rememb
 	background: url(../img/4-layers.png) no-repeat 50% 50%/cover
 	height: 960px
+	// padding-top: 170px
 	.rememb_container
 		width: 90%
 		max-width: 1520px
 		margin: 0 auto
 	.rem_block
+		width: 600px
+		float: right
+		margin-top: 170px
+		
 		h2
 			font-size: 7.5rem
+			font-family: 'Lato', sans-serif
+			font-weight: 400
+			padding: 80px 0px
+			padding-right: 50px
+			background: url(../img/zero.png) no-repeat 60% 50%
+			position: relative
+			&:before
+				content: ""
+				width: 30px
+				height: 2px
+				background: red
+				position: absolute
+				left: 250px
+				top: 50%
+				margin-top: 2px
+				
+			&:after
+				content: ""
+				width: 30px
+				height: 2px
+				background: red
+				position: absolute
+				left: 300px
+				top: 50%
+				margin-top: 2px
+				
+
+		p
+			color: #333333
+			font-size: 3.3rem
 			font-family: 'Lato', sans-serif
 			font-weight: 400
 #quest
 	height: 960px
 	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
+	// padding-top: 50px
+
+	.quest_container
+		width: 90%
+		max-width: 1520px
+		margin: 0 auto
+	.quest_offer
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.quest_info
+			width: 915px
+			margin-top: 60px
+			h2
+				font-size: 7.5rem
+				color: #333
+				font-family: 'Lato', sans-serif
+				font-weight: 400
+				background: url(../img/second.png) no-repeat 0% 50%
+				padding: 80px 0px
+				position: relative
+				
+				// margin-bottom: 30px
+				&:before
+					content: ""
+					width: 30px
+					height: 2px
+					background: red
+					position: absolute
+					left: 200px
+					top: 50%
+					margin-top: 2px
+				
+				&:after
+					content: ""
+					width: 30px
+					height: 2px
+					background: red
+					position: absolute
+					left: 250px
+					top: 50%
+					margin-top: 2px
+			ul
+				display: block
+				margin-left: 10px
+				margin-top: 90px
+				
+				li
+					font-size: 3.5rem
+					color: #333
+					font-family: 'Lato', sans-serif
+					font-weight: 400
+					margin-top: 30px
+					display: block
+					
+				.inf_secq
+					// display: flex
+					color: #d22222
+					border-left: 2px solid #d22222
+					padding-left: 10px
+					margin-left: -10px
+					
+				p
+					font-size: 2.9rem
+					color: #535353
+					font-family: 'Lato', sans-serif
+					font-weight: 400
+					display: flex
+					justify-content: flex-start
+					margin: 45px 0px
+					align-items: flex-start
+					// margin-left: 50px
+					&:before
+						content: " "
+						width: 30px
+						display: block
+						margin-right: 20px
+						height: 1px
+						color: red
+						padding-right: 15px
+						margin-top: 15px
+						background: red
+		.quest_right
+			// position: absolute
+			
+			.q_rig_img
+				// z-index: 0
+				img
+					margin-bottom: -2px
+					margin-left: 10px
+					// z-index: 0
+			.times
+				background: #d22222
+				padding: 15px
+				position: absolute
+				width: 1500px
+				box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67)
+
+				// z-index: 10
+				h4
+					color: #fff
+					font-size: 3.7rem
+					font-family: 'Lato', sans-serif
+					font-weight: 400
+					margin-bottom: 15px
+				.timer
+					span
+						font-size: 10rem
+						color: #fff
+						font-family: 'Lato', sans-serif
+						font-weight: 400
+
+
+
 
 
 .footer_container
@@ -407,6 +556,3 @@ header
 				.sex:hover
 					background-color: #ff0000
 					color: #ffffff
-@media all and (max-width:1400px)
-	body
-		display: none
