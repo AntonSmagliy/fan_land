@@ -12,19 +12,12 @@
   font-style: normal;
   font-weight: normal;
 }
-@font-face {
-  font-family: "LatoLight";
-  src: url("../fonts/LatoLight.eot");
-  src: url("../fonts/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight.woff") format("woff"), url("../fonts/LatoLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-img {
-  max-width: 100%;
-}
-
 html {
   font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -401,8 +394,6 @@ header h1 {
   max-width: 1550px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +450,7 @@ header h1 {
   font-family: "Lato - Thin";
   font-size: 17px;
   font-weight: 400;
+  margin: 0px 10px;
 }
 .footer_container .footer_text1 {
   width: 339px;
@@ -488,9 +480,6 @@ header h1 {
   margin-right: 70px;
 }
 
-.revies {
-  display: none;
-}
 .revies .revies_container {
   position: relative;
 }
@@ -505,15 +494,15 @@ header h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-left: 50px;
-  width: 600px;
+  padding-left: 100px;
+  width: 800px;
   top: 0%;
   left: 0%;
   height: 100%;
   z-index: 99999999999;
-  background-color: #333333;
-  -webkit-clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
+  background-image: url(../img/antonsuka2.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 .revies .revies_container .revies_text .revies_text_title {
   display: -webkit-box;
@@ -535,6 +524,7 @@ header h1 {
   height: 3px;
   background-color: #d22222;
   margin-top: 15px;
+  margin-left: 20px;
   z-index: 9999999999;
 }
 .revies .revies_container .revies_text p {
@@ -545,8 +535,8 @@ header h1 {
 }
 .revies .revies_container .slider {
   padding: 60px 0;
-  width: 85%;
-  margin-left: auto;
+  width: 100%;
+  margin-left: 250px;
 }
 .revies .revies_container .slider .slider_content {
   position: relative;
@@ -675,6 +665,155 @@ header h1 {
 .feedback .feedback_container .feedback_form .choose_sex .sex:hover {
   background-color: #ff0000;
   color: #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 3000px) and (min-width: 1480px) {
+  .revies .revies_container .revies_text {
+    background-size: 100%;
+  }
+}
+@media all and (max-width: 1480px) {
+  footer .footer_container .footer_logo h2 {
+    font-size: 50px;
+  }
+  footer .footer_container .footer_text {
+    width: 250px;
+  }
+
+  .revies .revies_container .revies_text {
+    width: 600px;
+    padding-left: 50px;
+    background-size: 100% 100%;
+  }
+  .revies .revies_container .slider {
+    margin-left: 200px;
+  }
+}
+@media all and (max-width: 1250px) {
+  .revies .revies_container .revies_text {
+    width: 500px;
+    background-size: 100% 100%;
+  }
+  .revies .revies_container .revies_text .revies_text_title h2 {
+    font-size: 50px;
+  }
+  .revies .revies_container .revies_text p {
+    font-size: 30px;
+  }
+  .revies .revies_container .slider {
+    width: 100%;
+    margin-left: 100px;
+  }
+  .revies .revies_container .slider .slider_content img {
+    width: 500px;
+    height: auto;
+  }
+
+  .slick-slide {
+    margin: 0 20px;
+  }
+}
+@media all and (max-width: 1150px) {
+  .revies {
+    padding-top: 200px;
+    position: relative;
+  }
+  .revies .revies_container {
+    position: static;
+  }
+  .revies .revies_container .revies_text {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .revies .revies_container .revies_text .revies_text_title h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .revies .revies_container .slider {
+    z-index: 999999999999999999;
+    margin: 0;
+  }
+}
+@media all and (max-width: 1000px) {
+  footer .footer_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer_container .footer_logo {
+    width: 45%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  footer .footer_container .footer_text {
+    width: 45%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+@media all and (max-width: 700px) {
+  .feedback .feedback_container h2 {
+    font-size: 60px;
+    margin-bottom: 35px;
+  }
+  .feedback .feedback_container p {
+    font-size: 27px;
+    margin-bottom: 55px;
+  }
+  .feedback .feedback_container .feedback_form label {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  .feedback .feedback_container .feedback_form input {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .feedback .feedback_container .feedback_form .choose_sex .sex {
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .feedback .feedback_container .feedback_form input[type=submit] {
+    width: 65%;
+    font-size: 27px;
+  }
+
+  .running_line .running_line_container .ticker #webTicker li {
+    font-size: 30px;
+  }
+
+  .revies .revies_container .revies_text {
+    width: 100%;
+  }
+  .revies .revies_container .revies_text .revies_text_title h2 {
+    font-size: 40px;
+  }
+  .revies .revies_container .revies_text p {
+    font-size: 22px;
+  }
+  .revies .revies_container .slider .slider_content img {
+    width: 320px;
+    height: auto;
+  }
+}
+@media all and (max-width: 500px) {
+  footer .footer_container .footer_logo {
+    width: 100%;
+  }
+  footer .footer_container .footer_text {
+    width: 100%;
+  }
+
+  .revies .revies_container .revies_text {
+    padding-left: 10px;
+    width: 150%;
+  }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

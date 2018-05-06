@@ -11,7 +11,12 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
+    centerPadding: '60px'
     });
+    $('.sex').click(function() {
+        $('.sex').removeClass('active');
+        $(this).addClass('active');
+    })
 })
 function updater(d, h, m, s) {
   // День сброса - 27 сентября 2015 года (и далее каждые три дня)
