@@ -565,6 +565,9 @@ header h1 {
 .feedback {
   background-image: url(../img/casino.png);
   background-position: 7% 0%;
+  padding-top: 70px;
+  -webkit-box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35);
 }
 .feedback .feedback_container {
   width: 90%;
