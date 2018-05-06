@@ -12,6 +12,7 @@
 	font-weight: normal
 html
 	font-size: 10px
+	overflow-x: hidden
 .clearfix::after
 	content: ""
 	display: table
@@ -135,10 +136,60 @@ header
 					margin-right: 70px
 .revies
 	.revies_container
+		position: relative
+		.revies_text
+			position: absolute
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			padding-left: 50px
+			width: 600px
+			top: 0%
+			left: 0%
+			height: 100%
+			z-index: 99999999999
+			background-color: #333333
+			clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%)
+			.revies_text_title
+				display: flex
+				align-items: center
+				h2
+					color: #ffffff
+					font-family: "Lato - Black"
+					font-size: 75px
+					font-weight: 400
+					position: relative
+				.red_line
+					width: 130px
+					height: 3px
+					background-color: #d22222
+					margin-top: 15px
+					// position: absolute
+					z-index: 9999999999
+			p
+				color: #ffffff
+				font-family: "Lato - Black"
+				font-size: 42px
+				font-weight: 400
 		.slider
-			width: 70%
+			padding: 60px 0
+			width: 85%
+			margin-left: auto
 			.slider_content
-				margin: 0 50px
+				position: relative
+				// margin: 0 50px
 				img
 					width: 728px
 					height: 541px
+
+				.slider_content_absolute
+					position: absolute
+					top: 0%
+					left: 0%
+					height: 100%
+					width: 100%
+					background-color: rgba(0, 0, 0, 0.35)
+.slick-active .slider_content .slider_content_absolute
+	display: none
+.slick-slide
+	margin: 0 50px
