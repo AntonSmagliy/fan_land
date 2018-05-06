@@ -13,6 +13,8 @@
 html
 	font-size: 10px
 	overflow-x: hidden
+body
+	overflow-x: hidden
 .clearfix::after
 	content: ""
 	display: table
@@ -28,6 +30,7 @@ header
 		display: flex
 		justify-content: space-between
 		padding-top: 35px
+		margin-bottom: 175px
 		.logo
 			display: block
 			font-family: 'Lato', sans-serif
@@ -36,10 +39,8 @@ header
 			text-decoration: none
 			font-size: 4.2rem
 
-
 			span
 				color: #d22222
-
 		nav
 			ul
 				margin: 0
@@ -58,10 +59,132 @@ header
 		text-align: center
 		color: #333333
 		font-size: 5rem
-		font-family: 'Lato', sans-serif
-		font-weight: 300
+		font-family: "LatoLight", sans-serif
+		margin-bottom: 25px
+		span
+			font-weight: 900
 	h1
 		text-align: center
+
+		font-size: 22rem
+		padding: 0
+		margin: 0
+		font-family: 'Lato', sans-serif
+		font-weight: 900
+		letter-spacing: -25px
+		color: #333
+		line-height: 170px
+
+#black_sec
+	background: url(../img/bg-black.png) no-repeat 50% 50%/cover
+	// height: 450px
+	// overflow: hidden
+	padding: 50px 0px
+	position: relative
+	padding-bottom: 140px
+
+
+	.container_black
+		width: 90%
+		max-width: 1520px
+		margin: 0 auto
+	.offer_black
+		display: flex
+		justify-content: center
+		align-items: center
+
+		.black_img
+			margin-right: 60px
+			// overflow: hidden
+			position: relative
+			width: 100%
+			height: 100%
+			img
+				// position: absolute
+				// // top: -100px
+				// left: 0
+				// bottom: 0
+				margin-top: -85px
+				// height: 100%
+				// width: auto
+				// overflow: hidden
+
+		.black_info
+			font-size: 2.9rem
+			color: #fff
+
+			font-family: 'Lato', sans-serif
+			font-weight: 400
+			p
+				margin-bottom: 35px
+				line-height: 35px
+				width: 435px
+
+				span
+					color: #d22222
+	.big__black_abs
+		padding: 25px 0px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35)
+		background: url(../img/bg-black.png) repeat 50% 50%
+		.black_list
+			width: 90%
+			max-width: 1520px
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.econom_cash
+				display: flex
+				align-items: center
+				&:after
+					content: ""
+					height: 70px
+					width: 1px
+					background: #d22222
+					margin-left: 30px
+				p
+					font-size: 3.3rem
+					color: #fff
+					font-family: 'Lato', sans-serif
+					font-weight: 400
+					margin-left: 40px
+
+			.casino
+				margin-left: 25px
+				p
+					color: #ffffff
+					font-family: 'Lato', sans-serif
+					font-size: 2.5rem
+					font-weight: 300
+					max-width: 430px
+			.image_prev
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.fonts_image
+					border-left: 1px solid #d22222
+					margin-left: 15px
+					padding-left: 15px
+#rememb
+	background: url(../img/4-layers.png) no-repeat 50% 50%/cover
+	height: 960px
+	.rememb_container
+		width: 90%
+		max-width: 1520px
+		margin: 0 auto
+	.rem_block
+		h2
+			font-size: 7.5rem
+			font-family: 'Lato', sans-serif
+			font-weight: 400
+#quest
+	height: 960px
+	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
+
 
 
 
@@ -71,7 +194,6 @@ header
 	width: 90%
 	max-width: 1550px
 	justify-content: space-around
-	flex-wrap: wrap
 	margin: 0 auto
 	display: flex
 	line-height: 1.35
@@ -115,6 +237,7 @@ header
 		font-family: "Lato - Thin"
 		font-size: 17px
 		font-weight: 400
+		margin: 0px 10px
 	.footer_text1
 		width: 339px
 	.footer_text2
@@ -136,7 +259,6 @@ header
 					font-weight: 400
 					margin-right: 70px
 .revies
-	display: none
 	.revies_container
 		position: relative
 		.revies_text
@@ -144,14 +266,17 @@ header
 			display: flex
 			flex-direction: column
 			justify-content: space-around
-			padding-left: 50px
-			width: 600px
+			padding-left: 100px
+			width: 800px
 			top: 0%
 			left: 0%
 			height: 100%
 			z-index: 99999999999
-			background-color: #333333
-			clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%)
+			// clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%)
+			background-image: url(../img/antonsuka2.png)
+			background-repeat: no-repeat
+			background-position: top right
+			// background-size: 100% 100%
 			.revies_text_title
 				display: flex
 				align-items: center
@@ -166,6 +291,7 @@ header
 					height: 3px
 					background-color: #d22222
 					margin-top: 15px
+					margin-left: 20px
 					// position: absolute
 					z-index: 9999999999
 			p
@@ -175,8 +301,8 @@ header
 				font-weight: 400
 		.slider
 			padding: 60px 0
-			width: 85%
-			margin-left: auto
+			width: 100%
+			margin-left: 250px
 			.slider_content
 				position: relative
 				// margin: 0 50px
@@ -280,6 +406,125 @@ header
 				.sex:hover
 					background-color: #ff0000
 					color: #ffffff
-@media all and (max-width:1400px)
-	body
-		display: none
+@media all and (max-width:1480px)
+	footer
+		.footer_container
+			.footer_logo
+				h2
+					font-size: 50px
+			.footer_text
+				width: 250px
+	.revies
+		.revies_container
+			.revies_text
+				width: 600px
+				padding-left: 50px
+				background-size: 100% 100%
+			.slider
+				margin-left: 200px
+@media all and (max-width:1250px)
+	.revies
+		.revies_container
+			.revies_text
+				width: 500px
+				background-size: 100% 100%
+				.revies_text_title
+					h2
+						font-size: 50px
+				p
+					font-size: 30px
+			.slider
+				width: 100%
+				margin-left: 100px
+				.slider_content
+					img
+						width: 500px
+						height: auto
+	.slick-slide
+		margin: 0 20px
+@media all and (max-width:1150px)
+	.revies
+		padding-top: 200px
+		position: relative
+		.revies_container
+			position: static
+			.revies_text
+				width: 100%
+				justify-content: flex-start
+				.revies_text_title
+					h2
+						margin-top: 50px
+						margin-bottom: 50px
+			.slider
+				z-index: 999999999999999999
+				margin: 0
+@media all and (max-width:1000px)
+	footer
+		.footer_container
+			flex-wrap: wrap
+			.footer_logo
+				width: 45%
+				margin: 0
+				margin-bottom: 40px
+			.footer_text
+				width: 45%
+				margin: 0
+				margin-bottom: 40px
+@media all and (max-width:700px)
+	.feedback
+		.feedback_container
+			h2
+				font-size: 60px
+				margin-bottom: 35px
+			p
+				font-size: 27px
+				margin-bottom: 55px
+			.feedback_form
+				label
+					font-size: 27px
+					margin-bottom: 15px
+				input
+					width: 90%
+					margin-bottom: 40px
+				.choose_sex
+					.sex
+						margin-bottom: 40px
+						margin-left: 0
+						margin-right: 5px
+				input[type=submit]
+					width: 65%
+					font-size: 27px
+	.running_line
+		.running_line_container
+			.ticker
+				#webTicker
+					li
+						font-size: 30px
+	.revies
+		.revies_container
+			.revies_text
+				width: 100%
+				.revies_text_title
+					h2
+						font-size: 40px
+				p
+					font-size: 22px
+			.slider
+				.slider_content
+					img
+						width: 320px
+						height: auto
+@media all and (max-width:500px)
+	footer
+		.footer_container
+			.footer_logo
+				width: 100%
+			.footer_text
+				width: 100%
+	.revies
+		.revies_container
+			.revies_text
+				padding-left: 10px
+				width: 150%
+	.slick-slide
+		margin: 0 10px
