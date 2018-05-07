@@ -111,6 +111,7 @@ header {
       width: 100%;
       height: 100%; }
       #black_sec .offer_black .black_img img {
+        max-width: 100%;
         margin-top: -85px; }
     #black_sec .offer_black .black_info {
       font-size: 2.9rem;
@@ -163,7 +164,7 @@ header {
           color: #fff;
           font-family: 'Lato', sans-serif;
           font-weight: 400;
-          margin-left: 40px; }
+          margin-left: 22px; }
       #black_sec .big__black_abs .black_list .casino {
         margin-left: 25px; }
         #black_sec .big__black_abs .black_list .casino p {
@@ -189,19 +190,370 @@ header {
 
 #rememb {
   background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
-  height: 960px; }
+  height: 990px; }
   #rememb .rememb_container {
     width: 90%;
     max-width: 1520px;
     margin: 0 auto; }
-  #rememb .rem_block h2 {
-    font-size: 7.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400; }
+  #rememb .rem_block {
+    width: 600px;
+    float: right;
+    margin-top: 170px; }
+    #rememb .rem_block h2 {
+      font-size: 7.5rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      padding: 80px 0px;
+      padding-right: 50px;
+      background: url(../img/zero.png) no-repeat 60% 50%;
+      position: relative; }
+      #rememb .rem_block h2:before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: red;
+        position: absolute;
+        left: 250px;
+        top: 50%;
+        margin-top: 2px; }
+      #rememb .rem_block h2:after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: red;
+        position: absolute;
+        left: 300px;
+        top: 50%;
+        margin-top: 2px; }
+    #rememb .rem_block p {
+      color: #333333;
+      font-size: 3.3rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400; }
 
 #quest {
-  height: 960px;
+  height: 990px;
   background: url(../img/2-layers5.png) no-repeat 50% 50%/cover; }
+  #quest .quest_container {
+    width: 90%;
+    max-width: 1520px;
+    margin: 0 auto; }
+  #quest .quest_offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #quest .quest_offer .quest_info {
+      width: 915px;
+      margin-top: 60px; }
+      #quest .quest_offer .quest_info h2 {
+        font-size: 7.5rem;
+        color: #333;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background: url(../img/second.png) no-repeat 0% 50%;
+        padding: 80px 0px;
+        position: relative; }
+        #quest .quest_offer .quest_info h2:before {
+          content: "";
+          width: 30px;
+          height: 2px;
+          background: red;
+          position: absolute;
+          left: 200px;
+          top: 50%;
+          margin-top: 2px; }
+        #quest .quest_offer .quest_info h2:after {
+          content: "";
+          width: 30px;
+          height: 2px;
+          background: red;
+          position: absolute;
+          left: 250px;
+          top: 50%;
+          margin-top: 2px; }
+      #quest .quest_offer .quest_info ul {
+        display: block;
+        margin-left: 10px;
+        margin-top: 90px; }
+        #quest .quest_offer .quest_info ul li {
+          font-size: 3.5rem;
+          color: #333;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          margin-top: 30px;
+          display: block; }
+        #quest .quest_offer .quest_info ul .inf_secq {
+          color: #d22222;
+          border-left: 2px solid #d22222;
+          padding-left: 10px;
+          margin-left: -10px; }
+        #quest .quest_offer .quest_info ul p {
+          font-size: 2.9rem;
+          color: #535353;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          margin: 45px 0px;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start; }
+          #quest .quest_offer .quest_info ul p:before {
+            content: " ";
+            width: 30px;
+            display: block;
+            margin-right: 20px;
+            height: 1px;
+            color: red;
+            padding-right: 15px;
+            margin-top: 15px;
+            background: red; }
+    #quest .quest_offer .quest_right .q_rig_img img {
+      margin-bottom: -2px;
+      margin-left: 10px; }
+    #quest .quest_offer .quest_right .times {
+      background: #d22222;
+      padding: 15px;
+      position: absolute;
+      width: 100%;
+      -webkit-box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67);
+      box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67); }
+      #quest .quest_offer .quest_right .times h4 {
+        color: #fff;
+        font-size: 3.7rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin-bottom: 15px; }
+      #quest .quest_offer .quest_right .times .timer span {
+        font-size: 10rem;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400; }
+
+.mob_menu_ic {
+  display: none; }
+  .mob_menu_ic i {
+    font-size: 6rem; }
+
+.mobil_img {
+  display: none; }
+
+@media all and (max-width: 1320px) {
+  #black_sec {
+    padding-top: 30px; }
+    #black_sec .offer_black .black_info {
+      font-size: 2.5rem; }
+      #black_sec .offer_black .black_info p {
+        margin-bottom: 15px; } }
+
+@media all and (max-width: 1305px) {
+  #black_sec .offer_black .black_img {
+    margin-left: -180px; } }
+
+@media all and (max-width: 1295px) {
+  #quest .quest_offer .quest_info {
+    margin-top: 0; }
+    #quest .quest_offer .quest_info ul {
+      margin-top: 30px; } }
+
+@media all and (max-width: 1160px) {
+  #black_sec {
+    padding: 0;
+    padding-top: 50px; }
+    #black_sec .big__black_abs {
+      position: static; }
+  .dfgdf {
+    display: block !important; }
+  #black_sec .big__black_abs .black_list {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    #black_sec .big__black_abs .black_list .econom_cash:after {
+      display: none; }
+    #black_sec .big__black_abs .black_list .casino p {
+      margin-left: 111px; }
+      #black_sec .big__black_abs .black_list .casino p:before {
+        content: "";
+        margin-bottom: 15px;
+        display: block;
+        width: 70px;
+        height: 2px;
+        background: red; }
+  #quest {
+    position: relative; }
+    #quest .quest_offer .quest_right .q_rig_img img {
+      display: none; }
+    #quest .quest_offer .quest_right .times {
+      top: 30px;
+      left: 515px; }
+    #quest .quest_offer .quest_info {
+      width: 85%; }
+      #quest .quest_offer .quest_info ul li {
+        font-size: 2.5rem; } }
+
+#rememb {
+  background-position: 25% 50%; }
+
+#quest {
+  background-position: 25% 50%; }
+
+@media all and (max-width: 1085px) {
+  header h1 {
+    font-size: 19rem;
+    line-height: 145px; } }
+
+@media all and (max-width: 980px) {
+  #black_sec .offer_black .black_img img {
+    margin-top: 0; }
+  #black_sec .offer_black .black_info p {
+    width: 350px; }
+  #quest .quest_offer .quest_right .times {
+    left: 400px; }
+  #rememb .rem_block {
+    width: 520px; } }
+
+@media all and (max-width: 890px) {
+  header h1 {
+    font-size: 15rem;
+    line-height: 113px; }
+  #black_sec .big__black_abs .black_list .casino p {
+    font-size: 1.8rem; } }
+
+@media all and (max-width: 835px) {
+  #quest .quest_offer .quest_right .times h4 {
+    font-size: 2rem; }
+  #quest .quest_offer .quest_right .times .timer span {
+    font-size: 5rem; } }
+
+@media all and (max-width: 800px) {
+  .desc_img {
+    display: none; }
+  .mobil_img {
+    display: block;
+    margin-left: 100px;
+    margin-top: -32px !important; } }
+
+#black_sec {
+  padding-top: 0; }
+
+@media all and (max-width: 765px) {
+  #black_sec .big__black_abs .black_list .image_prev .fonts_image img {
+    width: 30px; }
+  #black_sec .big__black_abs .black_list .econom_cash .money_img img {
+    width: 50px; }
+  #black_sec .big__black_abs .black_list .casino p {
+    margin-left: 50px; } }
+
+@media all and (max-width: 765px) {
+  #quest .quest_offer .quest_right .times {
+    left: 325px; } }
+
+@media all and (max-width: 740px) {
+  .top_line nav ul {
+    display: none; }
+    .top_line nav ul li {
+      float: none;
+      display: block; }
+  .top_line nav .mob_menu_ic {
+    display: block; } }
+
+@media all and (max-width: 695px) {
+  .mobil_img {
+    margin-left: 60px; }
+  header h1 {
+    font-size: 10rem;
+    line-height: 75px;
+    letter-spacing: -12px; } }
+
+@media all and (max-width: 650px) {
+  #rememb .rem_block {
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    padding-top: 170px; }
+  #black_sec .offer_black .black_info {
+    font-size: 2rem; }
+    #black_sec .offer_black .black_info p {
+      width: 250px; } }
+
+@media all and (max-width: 590px) {
+  #black_sec .offer_black .black_info {
+    font-size: 1.5rem; } }
+
+@media all and (max-width: 570px) {
+  #quest {
+    height: auto;
+    padding-bottom: 100px;
+    background-position: 27.2% 50%;
+    background: none; }
+    #quest .quest_offer {
+      display: block; }
+      #quest .quest_offer .quest_right .times {
+        margin-top: 50px;
+        position: static; } }
+
+@media all and (max-width: 520px) {
+  #quest .quest_offer .quest_info {
+    width: 90%;
+    margin: 0 auto; }
+    #quest .quest_offer .quest_info h2 {
+      font-size: 6rem; }
+    #quest .quest_offer .quest_info ul li {
+      font-size: 2rem; }
+    #quest .quest_offer .quest_info ul p {
+      font-size: 2rem; }
+  #rememb .rem_block p {
+    font-size: 2.7rem; }
+  #black_sec .big__black_abs .black_list {
+    display: block; }
+    #black_sec .big__black_abs .black_list .image_prev {
+      margin-top: 30px; }
+  #black_sec .big__black_abs .econom_cash p {
+    margin-bottom: 20px; } }
+
+@media all and (max-width: 480px) {
+  #black_sec {
+    padding: 50px 0px; }
+    #black_sec .offer_black {
+      display: block; }
+      #black_sec .offer_black .black_img img {
+        display: none; }
+      #black_sec .offer_black .black_info p {
+        width: 90%; }
+  header h1 {
+    font-size: 7rem;
+    line-height: 53px;
+    letter-spacing: -6px; }
+  header h3 {
+    font-size: 3.5rem; } }
+
+@media all and (max-width: 380px) {
+  #rememb .rem_block h2 {
+    font-size: 5.7rem;
+    background: none; }
+    #rememb .rem_block h2:before {
+      left: 200px; }
+    #rememb .rem_block h2:after {
+      left: 250px; } }
+
+@media all and (max-width: 360px) {
+  #quest .quest_offer .quest_info h2 {
+    background: none; }
+  header h1 {
+    font-size: 4.5rem;
+    line-height: 32px; }
+  header h3 {
+    font-size: 2.5rem; } }
 
 .footer_container {
   padding-bottom: 20px;
@@ -364,7 +716,9 @@ header {
 .feedback {
   background-image: url(../img/casino.png);
   background-position: 7% 0%;
-  padding-top: 90px; }
+  padding-top: 70px;
+  -webkit-box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35); }
   .feedback .feedback_container {
     width: 90%;
     max-width: 1520px;
@@ -473,6 +827,7 @@ header {
         color: #ffffff; }
       .feedback .feedback_container .feedback_form .choose_sex .sex:hover {
         background-color: #ff0000;
+        color: #ffffff;
         color: #ffffff; }
 
 @media (max-width: 3000px) and (min-width: 1480px) {
