@@ -119,3 +119,26 @@ function updater(d, h, m, s) {
 updater(document.getElementById("days"),
  document.getElementById("hours"), document.getElementById("minutes"),
  document.getElementById("seconds"));
+if($(window).width() > 1024)
+{
+   $('body').parallax({
+      'elements': [
+        {
+          'selector': '.fluffy',
+          'properties': {
+            'x': {
+              'right': {
+                'initial': -40,
+                'multiplier': 0.04,
+                'unit': 'px',
+                'invert': false
+              }
+            }
+            
+          }
+        }
+      ]
+    });
+} else {
+   // change functionality for larger screens
+}
