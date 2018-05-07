@@ -11,7 +11,9 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    centerPadding: '60px'
+    centerPadding: '60px',
+    autoplay: true,
+    focusOnSelect: true
     });
     $('.sex').click(function() {
         $('.sex').removeClass('active');

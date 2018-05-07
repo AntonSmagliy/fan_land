@@ -2,13 +2,19 @@
   font-family: "LatoRegular";
   src: url("../fonts/LatoRegular.eot");
   src: url("../fonts/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular.ttf") format("truetype");
-  font-style: normal;
+  font-style: normal2;
   font-weight: normal; }
 
 @font-face {
   font-family: "LatoBold";
   src: url("../fonts/LatoBold.eot");
   src: url("../fonts/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold.woff") format("woff"), url("../fonts/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Lato - Thin";
+  src: url("../fonts/Lato-Thin.ttf");
   font-style: normal;
   font-weight: normal; }
 
@@ -214,9 +220,9 @@ header {
     line-height: 1; }
     .footer_container .footer_logo h2 {
       color: #333333;
-      font-family: "Lato - Black";
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
       font-size: 67px;
-      font-weight: 400;
       margin-bottom: 23px; }
       .footer_container .footer_logo h2 span {
         color: #ff0000; }
@@ -224,7 +230,7 @@ header {
       color: #333333;
       font-family: "Lato - Thin";
       font-size: 17px;
-      font-weight: 400;
+      font-weight: 100;
       margin-bottom: 23px; }
     .footer_container .footer_logo .footer_icons {
       display: -webkit-box;
@@ -268,9 +274,9 @@ header {
       .running_line .running_line_container .ticker ul li {
         display: inline-block;
         color: #ffffff;
-        font-family: "Lato - Black";
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
         font-size: 42px;
-        font-weight: 400;
         margin-right: 70px; }
 
 .revies .revies_container {
@@ -301,12 +307,13 @@ header {
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
       .revies .revies_container .revies_text .revies_text_title h2 {
         color: #ffffff;
-        font-family: "Lato - Black";
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
         font-size: 75px;
-        font-weight: 400;
         position: relative; }
       .revies .revies_container .revies_text .revies_text_title .red_line {
         width: 130px;
@@ -315,11 +322,22 @@ header {
         margin-top: 15px;
         margin-left: 20px;
         z-index: 9999999999; }
+      .revies .revies_container .revies_text .revies_text_title span {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 250px;
+        line-height: 49.99px;
+        position: absolute;
+        color: #3e3e3e;
+        top: 100%;
+        left: 0%;
+        letter-spacing: -30px; }
     .revies .revies_container .revies_text p {
       color: #ffffff;
-      font-family: "Lato - Black";
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
       font-size: 42px;
-      font-weight: 400; }
+      z-index: 999999999; }
   .revies .revies_container .slider {
     padding: 60px 0;
     width: 100%;
@@ -345,34 +363,51 @@ header {
 
 .feedback {
   background-image: url(../img/casino.png);
-  background-position: 7% 0%; }
+  background-position: 7% 0%;
+  padding-top: 90px; }
   .feedback .feedback_container {
     width: 90%;
     max-width: 1520px;
     margin: 0 auto; }
-    .feedback .feedback_container h2 {
-      color: #333333;
-      font-family: "Lato - Black";
-      font-size: 75px;
-      font-weight: 400;
-      margin-bottom: 70px; }
+    .feedback .feedback_container .wrapper_feedback {
+      position: relative;
+      z-index: 9999999999999; }
+      .feedback .feedback_container .wrapper_feedback h2 {
+        color: #333333;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 75px;
+        margin-bottom: 70px;
+        z-index: 9999999999999999; }
+      .feedback .feedback_container .wrapper_feedback span {
+        color: #eaeaea;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 300px;
+        line-height: 49.99px;
+        letter-spacing: -30px;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        z-index: -1; }
     .feedback .feedback_container .red_line {
       width: 130px;
       height: 3px;
       background-color: #d22222;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      z-index: 99999999; }
     .feedback .feedback_container p {
       color: #535353;
-      font-family: Lato;
+      font-family: 'Lato';
       font-size: 37px;
       font-weight: 400;
       line-height: 50px;
       margin-bottom: 110px; }
     .feedback .feedback_container .feedback_form label {
       color: #333333;
-      font-family: "Lato - Black";
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
       font-size: 37px;
-      font-weight: 400;
       line-height: 50px;
       display: block;
       margin-bottom: 30px; }
@@ -383,7 +418,12 @@ header {
       border: 2px solid #929292;
       margin-bottom: 90px;
       padding-left: 20px;
-      outline: none; }
+      outline: none;
+      color: #333333;
+      font-family: 'Lato';
+      font-size: 37px;
+      font-weight: 400;
+      line-height: 50px; }
     .feedback .feedback_container .feedback_form input[type=submit] {
       width: 314px;
       height: 64px;
@@ -392,9 +432,9 @@ header {
       color: #ffffff;
       background-color: #ff0000;
       border: 2px solid #ff0000;
-      font-family: "Lato - Black";
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
       font-size: 37px;
-      font-weight: 400;
       line-height: 50px;
       cursor: pointer;
       margin-bottom: 50px; }
@@ -421,9 +461,9 @@ header {
         background-color: #ffffff;
         border: 2px solid #ff0000;
         color: #ff0000;
-        font-family: "Lato - Black";
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
         font-size: 42px;
-        font-weight: 400;
         line-height: 50px;
         margin-left: 30px;
         cursor: pointer;
@@ -506,6 +546,8 @@ header {
   .feedback .feedback_container p {
     font-size: 27px;
     margin-bottom: 55px; }
+  .feedback .feedback_container span {
+    font-size: 180px; }
   .feedback .feedback_container .feedback_form label {
     font-size: 27px;
     margin-bottom: 15px; }
@@ -525,6 +567,8 @@ header {
     width: 100%; }
     .revies .revies_container .revies_text .revies_text_title h2 {
       font-size: 40px; }
+    .revies .revies_container .revies_text .revies_text_title span {
+      font-size: 180px; }
     .revies .revies_container .revies_text p {
       font-size: 22px; }
   .revies .revies_container .slider .slider_content img {
