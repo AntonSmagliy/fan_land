@@ -1,8 +1,43 @@
-// $(document).ready(function() {
-//     $('.mob_menu_ic').click(function(){
-//         $('.nav ul').toggleClass
-//     });
-// });
+$(function() {
+    var menu = $("nav ul");
+    $(".mob_menu_ic").click(function() {
+    menu.slideToggle();
+    $(".mob_menu_ic i").toggleClass('whites');
+    return false;
+
+});
+$(window).resize(function(){
+  var w = $(window).width();
+  if(w > 320 && menu.is(':hidden')) {
+    menu.removeAttr('style');
+    $("nav ul").slideToggle();
+  }
+
+}); 
+});
+
+$(document).ready(function(){
+     var w = $(window).width();
+       if(w < 740 && w >= 320) {
+    $("nav ul li").on("click","a", function (event) {
+        $("nav ul").slideToggle();
+    });
+  }
+    $("nav ul li").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        // $("nav ul").slideToggle();
+        $(".mob_menu_ic i").toggleClass('whites');
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 $(document).ready(function() {
     $('#webTicker').webTicker({
         height: 'auto',
