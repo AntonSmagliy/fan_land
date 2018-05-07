@@ -2,13 +2,19 @@
   font-family: "LatoRegular";
   src: url("../fonts/LatoRegular.eot");
   src: url("../fonts/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular.ttf") format("truetype");
-  font-style: normal;
+  font-style: normal2;
   font-weight: normal;
 }
 @font-face {
   font-family: "LatoBold";
   src: url("../fonts/LatoBold.eot");
   src: url("../fonts/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold.woff") format("woff"), url("../fonts/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato - Thin";
+  src: url("../fonts/Lato-Thin.ttf");
   font-style: normal;
   font-weight: normal;
 }
@@ -706,9 +712,9 @@ header h1 {
 }
 .footer_container .footer_logo h2 {
   color: #333333;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 67px;
-  font-weight: 400;
   margin-bottom: 23px;
 }
 .footer_container .footer_logo h2 span {
@@ -718,7 +724,7 @@ header h1 {
   color: #333333;
   font-family: "Lato - Thin";
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 23px;
 }
 .footer_container .footer_logo .footer_icons {
@@ -774,9 +780,9 @@ header h1 {
 .running_line .running_line_container .ticker ul li {
   display: inline-block;
   color: #ffffff;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 42px;
-  font-weight: 400;
   margin-right: 70px;
 }
 
@@ -811,12 +817,13 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .revies .revies_container .revies_text .revies_text_title h2 {
   color: #ffffff;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 75px;
-  font-weight: 400;
   position: relative;
 }
 .revies .revies_container .revies_text .revies_text_title .red_line {
@@ -827,11 +834,23 @@ header h1 {
   margin-left: 20px;
   z-index: 9999999999;
 }
+.revies .revies_container .revies_text .revies_text_title span {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 250px;
+  line-height: 49.99px;
+  position: absolute;
+  color: #3e3e3e;
+  top: 100%;
+  left: 0%;
+  letter-spacing: -30px;
+}
 .revies .revies_container .revies_text p {
   color: #ffffff;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 42px;
-  font-weight: 400;
+  z-index: 999999999;
 }
 .revies .revies_container .slider {
   padding: 60px 0;
@@ -874,22 +893,40 @@ header h1 {
   max-width: 1520px;
   margin: 0 auto;
 }
-.feedback .feedback_container h2 {
+.feedback .feedback_container .wrapper_feedback {
+  position: relative;
+  z-index: 9999999999999;
+}
+.feedback .feedback_container .wrapper_feedback h2 {
   color: #333333;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 75px;
-  font-weight: 400;
   margin-bottom: 70px;
+  z-index: 9999999999999999;
+}
+.feedback .feedback_container .wrapper_feedback span {
+  color: #eaeaea;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 300px;
+  line-height: 49.99px;
+  letter-spacing: -30px;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  z-index: -1;
 }
 .feedback .feedback_container .red_line {
   width: 130px;
   height: 3px;
   background-color: #d22222;
   margin-bottom: 50px;
+  z-index: 99999999;
 }
 .feedback .feedback_container p {
   color: #535353;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 37px;
   font-weight: 400;
   line-height: 50px;
@@ -897,9 +934,9 @@ header h1 {
 }
 .feedback .feedback_container .feedback_form label {
   color: #333333;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 37px;
-  font-weight: 400;
   line-height: 50px;
   display: block;
   margin-bottom: 30px;
@@ -912,6 +949,11 @@ header h1 {
   margin-bottom: 90px;
   padding-left: 20px;
   outline: none;
+  color: #333333;
+  font-family: "Lato";
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 50px;
 }
 .feedback .feedback_container .feedback_form input[type=submit] {
   width: 314px;
@@ -921,9 +963,9 @@ header h1 {
   color: #ffffff;
   background-color: #ff0000;
   border: 2px solid #ff0000;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 37px;
-  font-weight: 400;
   line-height: 50px;
   cursor: pointer;
   margin-bottom: 50px;
@@ -953,9 +995,9 @@ header h1 {
   background-color: #ffffff;
   border: 2px solid #ff0000;
   color: #ff0000;
-  font-family: "Lato - Black";
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   font-size: 42px;
-  font-weight: 400;
   line-height: 50px;
   margin-left: 30px;
   cursor: pointer;
@@ -1065,6 +1107,9 @@ header h1 {
     font-size: 27px;
     margin-bottom: 55px;
   }
+  .feedback .feedback_container span {
+    font-size: 180px;
+  }
   .feedback .feedback_container .feedback_form label {
     font-size: 27px;
     margin-bottom: 15px;
@@ -1092,6 +1137,9 @@ header h1 {
   }
   .revies .revies_container .revies_text .revies_text_title h2 {
     font-size: 40px;
+  }
+  .revies .revies_container .revies_text .revies_text_title span {
+    font-size: 180px;
   }
   .revies .revies_container .revies_text p {
     font-size: 22px;
