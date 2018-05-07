@@ -1,8 +1,43 @@
-// $(document).ready(function() {
-//     $('.mob_menu_ic').click(function(){
-//         $('.nav ul').toggleClass
-//     });
-// });
+$(function() {
+    var menu = $("nav ul");
+    $(".mob_menu_ic").click(function() {
+    menu.slideToggle();
+    $(".mob_menu_ic i").toggleClass('whites');
+    return false;
+
+});
+$(window).resize(function(){
+  var w = $(window).width();
+  if(w > 320 && menu.is(':hidden')) {
+    menu.removeAttr('style');
+    $("nav ul").slideToggle();
+  }
+
+});
+});
+
+$(document).ready(function(){
+     var w = $(window).width();
+       if(w < 740 && w >= 320) {
+    $("nav ul li").on("click","a", function (event) {
+        $("nav ul").slideToggle();
+    });
+  }
+    $("nav ul li").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        // $("nav ul").slideToggle();
+        $(".mob_menu_ic i").toggleClass('whites');
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 $(document).ready(function() {
     $('#webTicker').webTicker({
         height: 'auto',
@@ -25,18 +60,24 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     $('.quest_item--visible').click(function (e) {
+        $('.quest_item--hidden').css('display', 'none');
+        $('.quest_item--hidden').css('height', 0);
         let hidden = $(this).siblings('.quest_item--hidden');
         let listItem = $(this).parents('.quest_item');
-        console.log(listItem);
         if (listItem.hasClass('quest_item--active')) {
             hidden.css('height', 0);
-            console.log(123);
+            hidden.css('display', 'none');
+            // $('.quest_item--visible').removeClass('inf_secq');
         } else {
             let hidden = $(this).siblings('.quest_item--hidden');
-            let sublist = hidden.children('.quest_item--hidden');
+            let sublist = $('.quest_item--hidden');
             let height = sublist.innerHeight();
-            hidden.css('height', height);
+            hidden.css('display', 'flex');
+            hidden.css('height', height+150);
         }
+        $('.quest_item').removeClass('quest_item--active');
+        $('.quest_item--visible').removeClass('inf_secq');
+        $(this).addClass('inf_secq');
         listItem.toggleClass('quest_item--active');
     });
 })
