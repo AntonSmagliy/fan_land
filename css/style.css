@@ -154,26 +154,40 @@ header {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-        #black_sec .big__black_abs .black_list .econom_cash:after {
-          content: "";
-          height: 70px;
-          width: 1px;
-          background: #d22222;
-          margin-left: 30px; }
         #black_sec .big__black_abs .black_list .econom_cash p {
           font-size: 3.3rem;
           color: #fff;
           font-family: 'Lato', sans-serif;
           font-weight: 400;
           margin-left: 22px; }
+        #black_sec .big__black_abs .black_list .econom_cash .econom_cash_wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
       #black_sec .big__black_abs .black_list .casino {
-        margin-left: 25px; }
+        margin-left: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
         #black_sec .big__black_abs .black_list .casino p {
           color: #ffffff;
           font-family: 'Lato', sans-serif;
           font-size: 2.5rem;
           font-weight: 300;
           max-width: 430px; }
+        #black_sec .big__black_abs .black_list .casino::before {
+          content: "";
+          display: block;
+          height: 70px;
+          width: 1px;
+          background: #d22222;
+          margin-left: 30px; }
       #black_sec .big__black_abs .black_list .image_prev {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -282,9 +296,9 @@ header {
         display: block;
         margin-left: 10px;
         margin-top: 90px;
-        -webkit-transition: 0.1s;
-        -o-transition: 0.1s;
-        transition: 0.1s; }
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
         #quest .quest_offer .quest_info ul li {
           font-size: 3.5rem;
           color: #333;
@@ -292,18 +306,20 @@ header {
           font-weight: 400;
           margin-top: 30px;
           display: block;
-          -webkit-transition: 1s;
-          -o-transition: 1s;
-          transition: 1s;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
           cursor: pointer; }
+          #quest .quest_offer .quest_info ul li:hover {
+            color: #d22222; }
         #quest .quest_offer .quest_info ul .inf_secq {
           color: #d22222;
           border-left: 2px solid #d22222;
           padding-left: 10px;
           margin-left: -10px;
-          -webkit-transition: 0.1s;
-          -o-transition: 0.1s;
-          transition: 0.1s; }
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
         #quest .quest_offer .quest_info ul .quest_text {
           font-size: 2.9rem;
           color: #535353;
@@ -319,9 +335,9 @@ header {
           -webkit-box-align: start;
           -ms-flex-align: start;
           align-items: flex-start;
-          -webkit-transition: 0.1s;
-          -o-transition: 0.1s;
-          transition: 0.1s;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
           display: flex; }
           #quest .quest_offer .quest_info ul .quest_text:before {
             content: " ";
@@ -761,6 +777,8 @@ header {
 .feedback {
   background-image: url(../img/casino.png);
   background-position: 7% 0%;
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
   padding-top: 70px;
   -webkit-box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35); }

@@ -62,12 +62,10 @@ $(document).ready(function() {
     $('.quest_item--visible').click(function (e) {
         event.preventDefault;
         $('.quest_item--hidden').css('display', 'none');
-        $('.quest_item--hidden').css('height', 0);
         let hidden = $(this).siblings('.quest_item--hidden');
         let listItem = $(this).parents('.quest_item');
         $('.quest_item--visible').removeClass('inf_secq');
         if (listItem.hasClass('quest_item--active')) {
-            hidden.css('height', 0);
             hidden.css('display', 'none');
             listItem.removeClass('quest_item--active');
         } else {
@@ -78,10 +76,8 @@ $(document).ready(function() {
             let sublist = $(this).siblings('.quest_item--hidden');
             hidden.css('display', 'flex');
             let height = sublist.innerHeight();
-            hidden.css('height', height+150);
+            hidden.css('height', height);
         }
-        // $('.quest_item--visible').removeClass('inf_secq');
-        listItem.toggleClass('quest_item--active');
     });
 })
 function updater(d, h, m, s) {
