@@ -35,6 +35,7 @@ body {
 
 header {
   background: url(../img/bg-white.png) no-repeat 50% 50%/cover;
+  zoom: 70%;
 }
 header .container_head {
   width: 90%;
@@ -49,7 +50,7 @@ header .top_line {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 35px;
-  margin-bottom: 175px;
+  margin-bottom: 95px;
 }
 header .top_line .logo {
   display: block;
@@ -57,7 +58,7 @@ header .top_line .logo {
   font-weight: 900;
   color: #303030;
   text-decoration: none;
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 header .top_line .logo span {
   color: #d22222;
@@ -68,7 +69,7 @@ header .top_line nav ul {
 }
 header .top_line nav ul li {
   float: left;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   margin-left: 15px;
 }
 header .top_line nav ul li a {
@@ -81,7 +82,7 @@ header .top_line nav ul li a {
 header h3 {
   text-align: center;
   color: #333333;
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-family: "LatoLight", sans-serif;
   margin-bottom: 25px;
 }
@@ -90,21 +91,22 @@ header h3 span {
 }
 header h1 {
   text-align: center;
-  font-size: 22rem;
+  font-size: 19rem;
   padding: 0;
   margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   letter-spacing: -25px;
   color: #333;
-  line-height: 170px;
+  line-height: 140px;
 }
 
 #black_sec {
   background: url(../img/bg-black.png) no-repeat 50% 50%/cover;
-  padding: 50px 0px;
+  padding: 30px 0px;
   position: relative;
-  padding-bottom: 140px;
+  padding-bottom: 50px;
+  zoom: 70%;
 }
 #black_sec .container_black {
   width: 90%;
