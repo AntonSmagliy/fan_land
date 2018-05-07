@@ -271,7 +271,7 @@ header
 				display: block
 				margin-left: 10px
 				margin-top: 90px
-
+				transition: 1s
 				li
 					font-size: 3.5rem
 					color: #333
@@ -279,7 +279,7 @@ header
 					font-weight: 400
 					margin-top: 30px
 					display: block
-
+					transition: 1s
 				.inf_secq
 					// display: flex
 					color: #d22222
@@ -297,6 +297,8 @@ header
 					margin: 45px 0px
 					align-items: flex-start
 					// margin-left: 50px
+					transition: 1s
+					display: flex
 					&:before
 						content: " "
 						width: 30px
@@ -307,6 +309,10 @@ header
 						padding-right: 15px
 						margin-top: 15px
 						background: red
+				.quest_item--hidden
+					display: none
+				.activeomg
+					display: flex
 		.quest_right
 			// position: absolute
 

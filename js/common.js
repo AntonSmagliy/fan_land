@@ -23,7 +23,22 @@ $(document).ready(function() {
     $('.sex').click(function() {
         $('.sex').removeClass('active');
         $(this).addClass('active');
-    })
+    });
+    $('.quest_item--visible').click(function (e) {
+        let hidden = $(this).siblings('.quest_item--hidden');
+        let listItem = $(this).parents('.quest_item');
+        console.log(listItem);
+        if (listItem.hasClass('quest_item--active')) {
+            hidden.css('height', 0);
+            console.log(123);
+        } else {
+            let hidden = $(this).siblings('.quest_item--hidden');
+            let sublist = hidden.children('.quest_item--hidden');
+            let height = sublist.innerHeight();
+            hidden.css('height', height);
+        }
+        listItem.toggleClass('quest_item--active');
+    });
 })
 function updater(d, h, m, s) {
   // День сброса - 27 сентября 2015 года (и далее каждые три дня)
@@ -54,7 +69,7 @@ function updater(d, h, m, s) {
     h.innerHTML = hours;
     m.innerHTML = min;
     s.innerHTML = sec;
-  
+
     // следующий раз вызываем себя, когда закончится текущая секунда
     setTimeout(update, millis);
   }
@@ -64,4 +79,3 @@ function updater(d, h, m, s) {
 updater(document.getElementById("days"),
  document.getElementById("hours"), document.getElementById("minutes"),
  document.getElementById("seconds"));
-  
