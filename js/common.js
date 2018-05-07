@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    
+});
+$(document).ready(function() {
     $('#webTicker').webTicker({
         height: 'auto',
         startEmpty: false,

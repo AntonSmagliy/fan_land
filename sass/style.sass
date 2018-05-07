@@ -100,6 +100,7 @@ header
 			width: 100%
 			height: 100%
 			img
+				max-width: 100%
 				// position: absolute
 				// // top: -100px
 				// left: 0
@@ -151,7 +152,7 @@ header
 					color: #fff
 					font-family: 'Lato', sans-serif
 					font-weight: 400
-					margin-left: 40px
+					margin-left: 22px
 
 			.casino
 				margin-left: 25px
@@ -171,7 +172,7 @@ header
 					padding-left: 15px
 #rememb
 	background: url(../img/4-layers.png) no-repeat 50% 50%/cover
-	height: 960px
+	height: 990px
 	// padding-top: 170px
 	.rememb_container
 		width: 90%
@@ -217,7 +218,7 @@ header
 			font-family: 'Lato', sans-serif
 			font-weight: 400
 #quest
-	height: 960px
+	height: 990px
 	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
 	// padding-top: 50px
 
@@ -314,7 +315,7 @@ header
 				background: #d22222
 				padding: 15px
 				position: absolute
-				width: 1500px
+				width: 100%
 				box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67)
 
 				// z-index: 10
@@ -331,8 +332,286 @@ header
 						font-family: 'Lato', sans-serif
 						font-weight: 400
 
+.mob_menu_ic
+	display: none
+	i
+		font-size: 6rem
+.mobil_img
+	display: none
+	
+// -------------------MEDIA---------VLa
+@media all and (max-width:1320px)
+	#black_sec
+		
+		padding-top: 30px
+		.offer_black
+			.black_img
+			.black_info
+				font-size: 2.5rem
+				p
+					margin-bottom: 15px
+@media all and (max-width:1305px)
+	#black_sec
+		.offer_black
+			.black_img
+				margin-left: -180px
+@media all and (max-width:1295px)
+	#quest
+		.quest_offer
+			.quest_info
+				margin-top: 0
+				ul
+					margin-top: 30px
+
+@media all and (max-width:1160px)
+	#black_sec
+		padding: 0
+		padding-top: 50px
+		.big__black_abs
+			position: static
+	.dfgdf
+		display: block!important
+	#black_sec
+		.big__black_abs
+			.black_list
+				align-items: flex-start
+				.econom_cash
+					&:after
+						display: none
+						
+				.casino
+					p
+						margin-left: 111px
+						&:before
+							content: ""
+							margin-bottom: 15px
+							display: block
+							width: 70px
+							height: 2px
+							background: red
+	#quest
+		position: relative
+		.quest_offer
+			.quest_right
+				.q_rig_img
+					img
+						display: none
+				.times
+					top: 30px
+					left: 515px
+			.quest_info
+				width: 85%
+				ul
+					li
+						font-size: 2.5rem
+#rememb
+	background-position: 25% 50%
+#quest
+	background-position: 25% 50%
 
 
+@media all and (max-width:1085px)
+	header
+		h1
+			font-size: 19rem
+			line-height: 145px	
+@media all and (max-width:980px)
+	#black_sec
+		.offer_black
+			.black_img
+				img
+					margin-top: 0
+			.black_info
+				p
+					width: 350px
+	#quest
+		.quest_offer
+			.quest_right
+				.times
+					left: 400px
+	#rememb
+		.rem_block
+			width: 520px
+@media all and (max-width:890px)
+	header
+		h1
+			font-size: 15rem
+			line-height: 113px
+	#black_sec
+		.big__black_abs
+			.black_list
+				.casino
+					p
+						font-size: 1.8rem
+@media all and (max-width:835px)
+	#quest
+		.quest_offer
+			.quest_right
+				.times
+					h4
+						font-size: 2rem
+					.timer
+						span
+							font-size: 5rem
+@media all and (max-width:800px)
+	.desc_img
+		display: none
+	.mobil_img
+		display: block
+		margin-left: 100px
+		margin-top: -32px!important
+#black_sec
+	padding-top: 0
+		
+		
+@media all and (max-width:765px)
+	#black_sec
+		.big__black_abs
+			.black_list
+				.image_prev
+					.fonts_image
+						img
+							width: 30px
+				.econom_cash
+					.money_img
+						img
+							width: 50px
+				.casino
+					p
+						margin-left: 50px
+@media all and (max-width:765px)
+	#quest
+		.quest_offer
+			.quest_right
+				.times
+					left: 325px
+@media all and (max-width:740px)
+	.top_line
+		nav
+			ul
+				display: none
+				li
+					float: none
+					display: block
+					
+			.mob_menu_ic
+				display: block
+@media all and (max-width:695px)
+	.mobil_img
+		margin-left: 60px	
+	header
+		h1
+			font-size: 10rem
+			line-height: 75px
+			letter-spacing: -12px		
+				
+@media all and (max-width:650px)
+	#rememb
+		.rem_block
+			width: 90%
+			margin: 0 auto
+			// margin-top: 170px
+			float: none
+			padding-top: 170px
+	#black_sec
+		// padding: 100px 0px
+		.offer_black
+			.black_info
+				font-size: 2rem
+				p
+					width: 250px
+@media all and (max-width:590px)
+	#black_sec
+		// padding: 100px 0px
+		.offer_black
+			.black_info
+				font-size: 1.5rem	
+@media all and (max-width:570px)
+	#quest
+		height: auto
+		padding-bottom: 100px
+		background-position: 27.2% 50%
+		background: none
+		
+		.quest_offer
+			display: block
+			.quest_right
+				.times
+					margin-top: 50px
+					position: static
+@media all and (max-width:520px)
+	#quest
+		.quest_offer
+			.quest_info
+				width: 90%
+				margin: 0 auto
+				h2
+					font-size: 6rem
+				ul
+					li
+						font-size: 2rem
+				ul
+					p
+						font-size: 2rem
+	#rememb
+		.rem_block
+			p
+				font-size: 2.7rem
+	#black_sec
+		.big__black_abs
+			.black_list
+				display: block
+				.image_prev
+					margin-top: 30px
+			.econom_cash
+				p
+					margin-bottom: 20px
+@media all and (max-width:480px)
+	#black_sec
+		padding: 50px 0px
+		.offer_black
+			display: block
+			
+			.black_img
+				img
+					display: none
+					
+			.black_info
+				p
+					width: 90%
+	header
+		h1
+			font-size: 7rem
+			line-height: 53px
+			letter-spacing: -6px
+		h3
+			font-size: 3.5rem
+@media all and (max-width:380px)
+	#rememb
+		.rem_block
+			h2
+				font-size: 5.7rem
+				background: none
+				
+				&:before
+					left: 200px
+				&:after
+					left: 250px
+@media all and (max-width:360px)
+	#quest
+		.quest_offer 
+			.quest_info
+				h2
+					background: none
+	header
+		h1
+			font-size: 4.5rem
+			line-height: 32px
+		h3
+			font-size: 2.5rem
+					
+					
+// ____________________________________
 
 
 
