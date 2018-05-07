@@ -226,6 +226,7 @@ header
 #quest
 	height: 990px
 	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
+
 	// padding-top: 50px
 
 	.quest_container
@@ -272,7 +273,7 @@ header
 				display: block
 				margin-left: 10px
 				margin-top: 90px
-
+				transition: 0.1s
 				li
 					font-size: 3.5rem
 					color: #333
@@ -280,15 +281,16 @@ header
 					font-weight: 400
 					margin-top: 30px
 					display: block
-
+					transition: 1s
+					cursor: pointer
 				.inf_secq
 					// display: flex
 					color: #d22222
 					border-left: 2px solid #d22222
 					padding-left: 10px
 					margin-left: -10px
-
-				p
+					transition: 0.1s
+				.quest_text
 					font-size: 2.9rem
 					color: #535353
 					font-family: 'Lato', sans-serif
@@ -298,6 +300,8 @@ header
 					margin: 45px 0px
 					align-items: flex-start
 					// margin-left: 50px
+					transition: 0.1s
+					display: flex
 					&:before
 						content: " "
 						width: 30px
@@ -308,6 +312,10 @@ header
 						padding-right: 15px
 						margin-top: 15px
 						background: red
+				.quest_item--hidden
+					display: none
+				.activeomg
+					display: flex
 		.quest_right
 			// position: absolute
 
@@ -512,7 +520,7 @@ header
 					bottom: 0
 					z-index: 9
 					background: rgba(0, 0, 0, .9)
-					
+
 					li
 						float: none
 						display: block
@@ -522,7 +530,7 @@ header
 							color: #fff
 						span
 							display: none
-							
+
 
 				.mob_menu_ic
 					display: block

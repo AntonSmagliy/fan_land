@@ -13,7 +13,7 @@ $(window).resize(function(){
     // $("nav ul").slideToggle();
   }
 
-}); 
+});
 });
 
 $(document).ready(function(){
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-        
+
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
@@ -58,7 +58,28 @@ $(document).ready(function() {
     $('.sex').click(function() {
         $('.sex').removeClass('active');
         $(this).addClass('active');
-    })
+    });
+    $('.quest_item--visible').click(function (e) {
+        $('.quest_item--hidden').css('display', 'none');
+        $('.quest_item--hidden').css('height', 0);
+        let hidden = $(this).siblings('.quest_item--hidden');
+        let listItem = $(this).parents('.quest_item');
+        if (listItem.hasClass('quest_item--active')) {
+            hidden.css('height', 0);
+            hidden.css('display', 'none');
+            // $('.quest_item--visible').removeClass('inf_secq');
+        } else {
+            let hidden = $(this).siblings('.quest_item--hidden');
+            let sublist = $('.quest_item--hidden');
+            let height = sublist.innerHeight();
+            hidden.css('display', 'flex');
+            hidden.css('height', height+150);
+        }
+        $('.quest_item').removeClass('quest_item--active');
+        $('.quest_item--visible').removeClass('inf_secq');
+        $(this).addClass('inf_secq');
+        listItem.toggleClass('quest_item--active');
+    });
 })
 function updater(d, h, m, s) {
   // День сброса - 27 сентября 2015 года (и далее каждые три дня)
@@ -89,7 +110,7 @@ function updater(d, h, m, s) {
     h.innerHTML = hours;
     m.innerHTML = min;
     s.innerHTML = sec;
-  
+
     // следующий раз вызываем себя, когда закончится текущая секунда
     setTimeout(update, millis);
   }
@@ -99,4 +120,3 @@ function updater(d, h, m, s) {
 updater(document.getElementById("days"),
  document.getElementById("hours"), document.getElementById("minutes"),
  document.getElementById("seconds"));
-  
