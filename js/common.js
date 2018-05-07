@@ -60,24 +60,27 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     $('.quest_item--visible').click(function (e) {
+        event.preventDefault;
         $('.quest_item--hidden').css('display', 'none');
         $('.quest_item--hidden').css('height', 0);
         let hidden = $(this).siblings('.quest_item--hidden');
         let listItem = $(this).parents('.quest_item');
+        $('.quest_item--visible').removeClass('inf_secq');
         if (listItem.hasClass('quest_item--active')) {
             hidden.css('height', 0);
             hidden.css('display', 'none');
-            // $('.quest_item--visible').removeClass('inf_secq');
+            listItem.removeClass('quest_item--active');
         } else {
+            $(this).addClass('inf_secq');
+            $('.quest_item').removeClass('quest_item--active');
+            listItem.addClass('quest_item--active');
             let hidden = $(this).siblings('.quest_item--hidden');
-            let sublist = $('.quest_item--hidden');
-            let height = sublist.innerHeight();
+            let sublist = $(this).siblings('.quest_item--hidden');
             hidden.css('display', 'flex');
+            let height = sublist.innerHeight();
             hidden.css('height', height+150);
         }
-        $('.quest_item').removeClass('quest_item--active');
-        $('.quest_item--visible').removeClass('inf_secq');
-        $(this).addClass('inf_secq');
+        // $('.quest_item--visible').removeClass('inf_secq');
         listItem.toggleClass('quest_item--active');
     });
 })
