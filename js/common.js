@@ -1,6 +1,8 @@
-$(document).ready(function() {
-    
-});
+// $(document).ready(function() {
+//     $('.mob_menu_ic').click(function(){
+//         $('.nav ul').toggleClass
+//     });
+// });
 $(document).ready(function() {
     $('#webTicker').webTicker({
         height: 'auto',
