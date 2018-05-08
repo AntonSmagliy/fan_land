@@ -80,7 +80,7 @@ $(document).ready(function() {
         }
     });
 })
-function updater(d, h, m, s) {
+function updater(d, h, m, s, ms) {
   // День сброса - 27 сентября 2015 года (и далее каждые три дня)
   var baseTime = new Date(2015, 8, 27);
   // Период сброса — 3 дня
@@ -106,19 +106,21 @@ function updater(d, h, m, s) {
     if(hours < 10) hours = "0"+hours;
     var days = Math.floor(diff / 24);
     // d.innerHTML = days;
-    h.innerHTML = hours;
+    // h.innerHTML = hours;
     m.innerHTML = min;
     s.innerHTML = sec;
+    ms.innerHTML = millis;
+
 
     // следующий раз вызываем себя, когда закончится текущая секунда
-    setTimeout(update, millis);
+    setTimeout(update, sec);
   }
   setTimeout(update, 0);
 }
 
 updater(document.getElementById("days"),
  document.getElementById("hours"), document.getElementById("minutes"),
- document.getElementById("seconds"));
+ document.getElementById("seconds"), document.getElementById("millis"));
 if($(window).width() > 1024)
 {
    $('body').parallax({
