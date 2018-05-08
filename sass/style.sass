@@ -20,6 +20,7 @@ html
 	overflow-x: hidden
 body
 	overflow-x: hidden
+	position: relative
 .clearfix::after
 	content: ""
 	display: table
@@ -837,7 +838,7 @@ header
 			top: 0%
 			left: 0%
 			height: 100%
-			z-index: 99999999999
+			z-index: 1
 			// clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%)
 			background-image: url(../img/antonsuka2.png)
 			background-repeat: no-repeat
@@ -1013,6 +1014,41 @@ header
 					color: #ffffff
 
 					color: #ffffff
+.modal_feedback
+	position: fixed
+	display: none
+	// width: 50%
+	top: 10%
+	left: 50%
+	background-color: white
+	transform: translateX(-50%)
+	z-index: 99999999999999999999
+	.modal_feedback_item
+		display: flex
+		align-items: center
+		img
+			height: 33%
+			width: 33%
+			padding: 20px
+		a
+			text-decoration: none
+			color: black
+			font-family: 'Lato', sans-serif
+			font-weight: 900
+			font-size: 150px
+			line-height: 49.99px
+			color: #3e3e3e
+
+#overlay
+	display: none
+	position: fixed
+	background-color: black
+	opacity: 0.9
+	overflow: hidden
+	overflow-y: hidden
+	width: 100%
+	height: 100vh
+	z-index: 999999999999999999999999999999999999999
 @media (max-width: 3000px) and (min-width:1480px)
 	.revies
 		.revies_container
@@ -1055,6 +1091,13 @@ header
 	.slick-slide
 		margin: 0 20px
 @media all and (max-width:1150px)
+	.modal_feedback
+		.modal_feedback_item
+			a
+				font-size: 100px
+			img
+				width: 200px
+				height: auto
 	.revies
 		padding-top: 200px
 		position: relative
@@ -1131,6 +1174,15 @@ header
 						width: 320px
 						height: auto
 @media all and (max-width:500px)
+	.modal_feedback
+		height: 80%
+		overflow-y: scroll
+		top: 5%
+		.modal_feedback_item
+			flex-direction: column
+			a
+				// padding-bottom: 20px
+				font-size: 50px
 	footer
 		.footer_container
 			.footer_logo
