@@ -191,8 +191,11 @@ header
 	font-family: 'Lato', sans-serif
 	font-weight: 400
 	margin-left: 22px
-	// float: left
-
+	
+.hd_seclis
+	float: left
+	margin-top: 25px
+	margin-right: 25px
 .econ_pers,.econom_pers_wrapper,.econ_coin,.econom_coin_wrapper
 	display: flex
 	align-items: center
@@ -204,11 +207,14 @@ header
 	align-items: center
 .econom_clock_wrapper
 	display: none
+	// width: 500px
 .econom_pers_wrapper
 	display: none
+	// width: 500px
 
 .econom_coin_wrapper
 	display: none
+	// width: 500px
 .disnone
 	display: none
 .fonts_image
@@ -525,9 +531,25 @@ header
 		display: block
 		margin-left: 100px
 		margin-top: -32px!important
-#black_sec
-	padding-top: 0
-
+	#black_sec
+		padding-top: 0
+	.hd_seclis
+		float: none
+	#black_sec
+		.big__black_abs
+			.black_list
+				.casino
+					p
+						margin-left: 0
+	#black_sec
+		.big__black_abs
+			.black_list
+				.econom_cash
+					.econom_cash_wrapper
+						flex-direction: column
+						align-items: flex-start
+	.hd_seclis
+		margin-top: 0
 
 @media all and (max-width:765px)
 	#black_sec
@@ -658,6 +680,13 @@ header
 			.econom_cash
 				p
 					margin-bottom: 20px
+	#black_sec
+		.big__black_abs
+			.black_list
+				.econom_cash
+					.money_img
+						img
+							margin-left: 25px
 @media all and (max-width:480px)
 	#black_sec
 		padding: 50px 0px
