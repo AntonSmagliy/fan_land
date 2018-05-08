@@ -189,7 +189,8 @@ header {
           height: 70px;
           width: 1px;
           background: #d22222;
-          margin-left: 30px; }
+          margin-left: 30px;
+          display: none; }
       #black_sec .big__black_abs .black_list .image_prev {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -205,13 +206,73 @@ header {
           margin-left: 15px;
           padding-left: 15px; }
 
+.hd_lists {
+  font-size: 3.3rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-left: 22px; }
+
+.econ_pers, .econom_pers_wrapper, .econ_coin, .econom_coin_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.econ_clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.econom_clock_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.econom_clock_wrapper {
+  display: none; }
+
+.econom_pers_wrapper {
+  display: none; }
+
+.econom_coin_wrapper {
+  display: none; }
+
+.disnone {
+  display: none; }
+
+.fonts_image {
+  cursor: pointer; }
+
+.money_img {
+  cursor: pointer; }
+
 #rememb {
   background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
-  height: 990px; }
+  height: 990px;
+  position: relative; }
   #rememb .rememb_container {
     width: 90%;
     max-width: 1520px;
     margin: 0 auto; }
+    #rememb .rememb_container .rememb_absolute {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      width: 100%;
+      opacity: 0.5;
+      height: 100%;
+      background-image: -webkit-linear-gradient(358deg, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%);
+      background-image: -o-linear-gradient(358deg, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%);
+      background-image: linear-gradient(-268deg, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%); }
   #rememb .rem_block {
     width: 600px;
     float: right;
@@ -230,7 +291,7 @@ header {
         height: 2px;
         background: red;
         position: absolute;
-        left: 250px;
+        left: 265px;
         top: 50%;
         margin-top: 2px; }
       #rememb .rem_block h2:after {
@@ -239,14 +300,15 @@ header {
         height: 2px;
         background: red;
         position: absolute;
-        left: 300px;
+        left: 344px;
         top: 50%;
         margin-top: 2px; }
     #rememb .rem_block p {
       color: #333333;
       font-size: 3.3rem;
       font-family: 'Lato', sans-serif;
-      font-weight: 400; }
+      font-weight: 400;
+      position: relative; }
 
 #quest {
   height: 990px;
@@ -272,7 +334,7 @@ header {
         font-size: 7.5rem;
         color: #333;
         font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-weight: 900;
         background: url(../img/second.png) no-repeat 0% 50%;
         padding: 80px 0px;
         position: relative; }
@@ -282,7 +344,7 @@ header {
           height: 2px;
           background: red;
           position: absolute;
-          left: 200px;
+          left: 197px;
           top: 50%;
           margin-top: 2px; }
         #quest .quest_offer .quest_info h2:after {
@@ -291,7 +353,7 @@ header {
           height: 2px;
           background: red;
           position: absolute;
-          left: 250px;
+          left: 277px;
           top: 50%;
           margin-top: 2px; }
       #quest .quest_offer .quest_info ul {
@@ -497,7 +559,7 @@ header {
 
 @media all and (max-width: 765px) {
   #black_sec .big__black_abs .black_list .image_prev .fonts_image img {
-    width: 30px; }
+    width: 40px; }
   #black_sec .big__black_abs .black_list .econom_cash .money_img img {
     width: 50px; }
   #black_sec .big__black_abs .black_list .casino p {
@@ -576,6 +638,16 @@ header {
       font-size: 2rem; }
     #quest .quest_offer .quest_info ul p {
       font-size: 2rem; }
+  #black_sec .big__black_abs .black_list .image_prev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  #black_sec .big__black_abs .black_list .casino {
+    margin-left: 0; }
   #rememb .rem_block p {
     font-size: 2.7rem; }
   #black_sec .big__black_abs .black_list {
@@ -781,7 +853,6 @@ header {
   background-image: url(../img/casino.png);
   background-position: 7% 0%;
   background-repeat: no-repeat;
-  background-size: 150% 100%;
   padding-top: 70px;
   -webkit-box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35); }

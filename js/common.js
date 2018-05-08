@@ -142,3 +142,38 @@ if($(window).width() > 1024)
 } else {
    // change functionality for larger screens
 }
+
+$(document).ready(function() {
+    // $('.money_img img').click(function(){
+    //     $('.econom_cash_wrapper').fadeIn('');
+    //    $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').fadeOut(''); 
+    // });
+    // $('.clock_img img').click(function(){
+    //     $('.econom_clock_wrapper').fadeIn('');
+    //    $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_cash_wrapper').fadeOut(''); 
+    // });
+    // $('.pers_img img').click(function(){
+    //     $('.econom_pers_wrapper').fadeIn('');
+    //    $('.econom_coin_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(''); 
+    // });
+    //  $('.coin_img img').click(function(){
+    //     $('.econom_coin_wrapper').fadeIn('');
+    //    $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(''); 
+    // });
+    $('.money_img img').click(function(){
+        $('.econom_cash_wrapper').css('display', 'flex');
+       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').css('display', 'none'); 
+    });
+    $('.clock_img img').click(function(){
+        $('.econom_clock_wrapper').css('display', 'flex');
+       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_cash_wrapper').css('display', 'none');
+    });
+    $('.pers_img img').click(function(){
+        $('.econom_pers_wrapper').css('display', 'flex');
+       $('.econom_coin_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').css('display', 'none');
+    });
+     $('.coin_img img').click(function(){
+        $('.econom_coin_wrapper').css('display', 'flex');
+       $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').css('display', 'none'); 
+    });
+});
