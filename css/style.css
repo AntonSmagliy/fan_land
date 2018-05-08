@@ -289,6 +289,14 @@ header h1 {
   display: none;
 }
 
+.fonts_image {
+  cursor: pointer;
+}
+
+.money_img {
+  cursor: pointer;
+}
+
 #rememb {
   background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
   height: 990px;
