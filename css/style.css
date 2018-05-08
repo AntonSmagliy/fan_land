@@ -179,72 +179,7 @@ header h1 {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-<<<<<<< HEAD
-      align-items: center; }
-      #black_sec .big__black_abs .black_list .econom_cash {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        #black_sec .big__black_abs .black_list .econom_cash p {
-          font-size: 3.3rem;
-          color: #fff;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          margin-left: 22px; }
-        #black_sec .big__black_abs .black_list .econom_cash .econom_cash_wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-      #black_sec .big__black_abs .black_list .casino {
-        margin-left: 25px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        #black_sec .big__black_abs .black_list .casino p {
-          color: #ffffff;
-          font-family: 'Lato', sans-serif;
-          font-size: 2.5rem;
-          font-weight: 300;
-          max-width: 430px; }
-        #black_sec .big__black_abs .black_list .casino::before {
-          content: "";
-          display: block;
-          height: 70px;
-          width: 1px;
-          background: #d22222;
-          margin-left: 30px; }
-      #black_sec .big__black_abs .black_list .image_prev {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        #black_sec .big__black_abs .black_list .image_prev .fonts_image {
-          border-left: 1px solid #d22222;
-          margin-left: 15px;
-          padding-left: 15px; }
-=======
           align-items: center;
-}
-#black_sec .big__black_abs .black_list .econom_cash:after {
-  content: "";
-  height: 70px;
-  width: 1px;
-  background: #d22222;
-  margin-left: 30px;
 }
 #black_sec .big__black_abs .black_list .econom_cash p {
   font-size: 3.3rem;
@@ -253,8 +188,22 @@ header h1 {
   font-weight: 400;
   margin-left: 22px;
 }
+#black_sec .big__black_abs .black_list .econom_cash .econom_cash_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 #black_sec .big__black_abs .black_list .casino {
   margin-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #black_sec .big__black_abs .black_list .casino p {
   color: #ffffff;
@@ -262,6 +211,14 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 300;
   max-width: 430px;
+}
+#black_sec .big__black_abs .black_list .casino::before {
+  content: "";
+  display: block;
+  height: 70px;
+  width: 1px;
+  background: #d22222;
+  margin-left: 30px;
 }
 #black_sec .big__black_abs .black_list .image_prev {
   display: -webkit-box;
@@ -279,7 +236,6 @@ header h1 {
   margin-left: 15px;
   padding-left: 15px;
 }
->>>>>>> bd94241bca464fb9f51955f93c55ec24275d903a
 
 #rememb {
   background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
@@ -333,90 +289,6 @@ header h1 {
 
 #quest {
   height: 990px;
-<<<<<<< HEAD
-  background: url(../img/2-layers5.png) no-repeat 50% 50%/cover; }
-  #quest .quest_container {
-    width: 90%;
-    max-width: 1520px;
-    margin: 0 auto; }
-  #quest .quest_offer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #quest .quest_offer .quest_info {
-      width: 915px;
-      margin-top: 60px; }
-      #quest .quest_offer .quest_info h2 {
-        font-size: 7.5rem;
-        color: #333;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        background: url(../img/second.png) no-repeat 0% 50%;
-        padding: 80px 0px;
-        position: relative; }
-        #quest .quest_offer .quest_info h2:before {
-          content: "";
-          width: 30px;
-          height: 2px;
-          background: red;
-          position: absolute;
-          left: 200px;
-          top: 50%;
-          margin-top: 2px; }
-        #quest .quest_offer .quest_info h2:after {
-          content: "";
-          width: 30px;
-          height: 2px;
-          background: red;
-          position: absolute;
-          left: 250px;
-          top: 50%;
-          margin-top: 2px; }
-      #quest .quest_offer .quest_info ul {
-        display: block;
-        margin-left: 10px;
-        margin-top: 90px;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        #quest .quest_offer .quest_info ul li {
-          font-size: 3.5rem;
-          color: #333;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          margin-top: 30px;
-          display: block;
-          -webkit-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s;
-          cursor: pointer; }
-          #quest .quest_offer .quest_info ul li:hover {
-            color: #d22222; }
-        #quest .quest_offer .quest_info ul .inf_secq {
-          color: #d22222;
-          border-left: 2px solid #d22222;
-          padding-left: 10px;
-          margin-left: -10px;
-          -webkit-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
-        #quest .quest_offer .quest_info ul .quest_text {
-          font-size: 2.9rem;
-          color: #535353;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: start;
-          -ms-flex-pack: start;
-=======
   background: url(../img/2-layers5.png) no-repeat 50% 50%/cover;
 }
 #quest .quest_container {
@@ -472,8 +344,8 @@ header h1 {
   display: block;
   margin-left: 10px;
   margin-top: 90px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #quest .quest_offer .quest_info ul li {
   font-size: 3.5rem;
@@ -482,17 +354,20 @@ header h1 {
   font-weight: 400;
   margin-top: 30px;
   display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
+}
+#quest .quest_offer .quest_info ul li:hover {
+  color: #d22222;
 }
 #quest .quest_offer .quest_info ul .inf_secq {
   color: #d22222;
   border-left: 2px solid #d22222;
   padding-left: 10px;
   margin-left: -10px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #quest .quest_offer .quest_info ul .quest_text {
   font-size: 2.9rem;
@@ -504,57 +379,13 @@ header h1 {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
->>>>>>> bd94241bca464fb9f51955f93c55ec24275d903a
           justify-content: flex-start;
   margin: 45px 0px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-<<<<<<< HEAD
-          -webkit-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s;
-          display: flex; }
-          #quest .quest_offer .quest_info ul .quest_text:before {
-            content: " ";
-            width: 30px;
-            display: block;
-            margin-right: 20px;
-            height: 1px;
-            color: red;
-            padding-right: 15px;
-            margin-top: 15px;
-            background: red; }
-        #quest .quest_offer .quest_info ul .quest_item--hidden {
-          display: none; }
-        #quest .quest_offer .quest_info ul .activeomg {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-    #quest .quest_offer .quest_right .q_rig_img img {
-      margin-bottom: -2px;
-      margin-left: 10px; }
-    #quest .quest_offer .quest_right .times {
-      background: #d22222;
-      padding: 15px;
-      position: absolute;
-      width: 100%;
-      -webkit-box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67);
-      box-shadow: 0 17px 17px rgba(6, 6, 6, 0.67); }
-      #quest .quest_offer .quest_right .times h4 {
-        color: #fff;
-        font-size: 3.7rem;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        margin-bottom: 15px; }
-      #quest .quest_offer .quest_right .times .timer span {
-        font-size: 10rem;
-        color: #fff;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400; }
-=======
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: flex;
 }
 #quest .quest_offer .quest_info ul .quest_text:before {
@@ -602,7 +433,6 @@ header h1 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
->>>>>>> bd94241bca464fb9f51955f93c55ec24275d903a
 
 .mob_menu_ic {
   display: none;
