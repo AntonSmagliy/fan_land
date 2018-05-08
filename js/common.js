@@ -176,4 +176,5 @@ $(document).ready(function() {
     //     $('.econom_coin_wrapper').animate({display: 'flex', opacity: '1'}, 1000);
     //    $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').animate({opacity: '0'}, 1000); 
     // });
+   
 });
