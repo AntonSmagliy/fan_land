@@ -937,7 +937,7 @@ header {
       font-size: 37px;
       font-weight: 400;
       line-height: 50px; }
-    .feedback .feedback_container .feedback_form input[type=button] {
+    .feedback .feedback_container .feedback_form input[type=submit] {
       width: 314px;
       height: 64px;
       border: none;
@@ -951,7 +951,7 @@ header {
       line-height: 50px;
       cursor: pointer;
       margin-bottom: 50px; }
-    .feedback .feedback_container .feedback_form input[type=button]:hover {
+    .feedback .feedback_container .feedback_form input[type=submit]:hover {
       color: #ff0000;
       background-color: #ffffff; }
     .feedback .feedback_container .feedback_form .choose_sex {
