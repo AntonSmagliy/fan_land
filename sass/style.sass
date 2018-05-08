@@ -176,7 +176,7 @@ header
 					background: #d22222
 					margin-left: 30px
 					display: none
-					
+
 			.image_prev
 				display: flex
 				justify-content: space-between
@@ -191,7 +191,7 @@ header
 	font-family: 'Lato', sans-serif
 	font-weight: 400
 	margin-left: 22px
-	
+
 .hd_seclis
 	float: left
 	margin-top: 25px
@@ -217,17 +217,26 @@ header
 .disnone
 	display: none
 .fonts_image
-	cursor: pointer	
+	cursor: pointer
 .money_img
 	cursor: pointer
 #rememb
 	background: url(../img/4-layers.png) no-repeat 50% 50%/cover
 	height: 990px
 	// padding-top: 170px
+	position: relative
 	.rememb_container
 		width: 90%
 		max-width: 1520px
 		margin: 0 auto
+		.rememb_absolute
+			position: absolute
+			right: 0%
+			top: 0%
+			width: 100%
+			opacity: 0.5
+			height: 100%
+			background-image: linear-gradient(-268deg, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%)
 	.rem_block
 		width: 600px
 		float: right
@@ -247,7 +256,7 @@ header
 				height: 2px
 				background: red
 				position: absolute
-				left: 250px
+				left: 265px
 				top: 50%
 				margin-top: 2px
 
@@ -257,7 +266,7 @@ header
 				height: 2px
 				background: red
 				position: absolute
-				left: 300px
+				left: 344px
 				top: 50%
 				margin-top: 2px
 
@@ -267,6 +276,7 @@ header
 			font-size: 3.3rem
 			font-family: 'Lato', sans-serif
 			font-weight: 400
+			position: relative
 #quest
 	height: 990px
 	background: url(../img/2-layers5.png) no-repeat 50% 50%/cover
@@ -288,7 +298,7 @@ header
 				font-size: 7.5rem
 				color: #333
 				font-family: 'Lato', sans-serif
-				font-weight: 400
+				font-weight: 900
 				background: url(../img/second.png) no-repeat 0% 50%
 				padding: 80px 0px
 				position: relative
@@ -300,7 +310,7 @@ header
 					height: 2px
 					background: red
 					position: absolute
-					left: 200px
+					left: 197px
 					top: 50%
 					margin-top: 2px
 
@@ -310,7 +320,7 @@ header
 					height: 2px
 					background: red
 					position: absolute
-					left: 250px
+					left: 277px
 					top: 50%
 					margin-top: 2px
 			ul
@@ -372,8 +382,8 @@ header
 					margin-left: 10px
 					// position: absolute
 					position: relative
-					
-					
+
+
 					// z-index: 0
 			.times
 				background: #d22222
@@ -885,7 +895,7 @@ header
 	background-image: url(../img/casino.png)
 	background-position: 7% 0%
 	background-repeat: no-repeat
-	background-size: 150% 100%
+	// background-size: 150% 100%
 	padding-top: 70px
 	box-shadow: 0 0 90px 46px rgba(0, 0, 0, 0.35)
 	.feedback_container
