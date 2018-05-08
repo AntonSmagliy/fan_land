@@ -303,6 +303,15 @@ header h1 {
   cursor: pointer;
 }
 
+#rememb:hover {
+  background: url(../img/color_re.png) no-repeat 24.4% 50%/cover;
+}
+
+@media all and (max-width: 800px) {
+  #rememb:hover {
+    background: url(../img/color_re.png) no-repeat 24.5% 50%/cover;
+  }
+}
 #rememb {
   background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
   height: 990px;
@@ -608,7 +617,7 @@ header h1 {
   }
 }
 #rememb {
-  background-position: 25% 50%;
+  background-position: 25.2% 50%;
 }
 
 #quest {
