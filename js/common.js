@@ -79,6 +79,21 @@ $(document).ready(function() {
             hidden.css('height', height);
         }
     });
+    $('#modal_form_submit').click(function(e) {
+        e.preventDefault;
+        // $('#overlay').css('display', 'block');
+        // $('.modal_feedback').css('display', 'block');
+        $('#overlay').fadeIn(200);
+        $('.modal_feedback').fadeIn(200);
+        $('html').css('overflow-y', 'hidden');
+    });
+    $('#overlay').click(function() {
+        // $(this).css('display', 'none');
+        // $('.modal_feedback').css('display', 'none');
+        $('#overlay').fadeOut(200);
+        $('.modal_feedback').fadeOut(200);
+        $('html').css('overflow-y', 'scroll');
+    })
 })
 function updater(d, h, m, s) {
   // День сброса - 27 сентября 2015 года (и далее каждые три дня)
@@ -134,7 +149,7 @@ if($(window).width() > 1024)
                 'invert': false
               }
             }
-            
+
           }
         }
       ]
@@ -146,23 +161,23 @@ if($(window).width() > 1024)
 $(document).ready(function() {
     $('.money_img img').click(function(){
         $('.econom_cash_wrapper').fadeIn(1000);
-       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').fadeOut(0.001); 
+       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').fadeOut(0.001);
     });
     $('.clock_img img').click(function(){
         $('.econom_clock_wrapper').fadeIn(1000);
-       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_cash_wrapper').fadeOut(0.001); 
+       $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_cash_wrapper').fadeOut(0.001);
     });
     $('.pers_img img').click(function(){
         $('.econom_pers_wrapper').fadeIn(1000);
-       $('.econom_coin_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(0.001); 
+       $('.econom_coin_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(0.001);
     });
      $('.coin_img img').click(function(){
         $('.econom_coin_wrapper').fadeIn(1000);
-       $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(0.001); 
+       $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').fadeOut(0.001);
     });
     // $('.money_img img').click(function(){
     //     $('.econom_cash_wrapper').animate({ display: 'flex', opacity: '1'}, 1000);
-    //    $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').animate({opacity: '0'}, 1000); 
+    //    $('.econom_coin_wrapper, .econom_pers_wrapper, .econom_clock_wrapper').animate({opacity: '0'}, 1000);
     // });
     // $('.clock_img img').click(function(){
     //     $('.econom_clock_wrapper').animate({display: 'flex', opacity: '1'}, 1000);
@@ -174,7 +189,7 @@ $(document).ready(function() {
     // });
     //  $('.coin_img img').click(function(){
     //     $('.econom_coin_wrapper').animate({display: 'flex', opacity: '1'}, 1000);
-    //    $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').animate({opacity: '0'}, 1000); 
+    //    $('.econom_pers_wrapper, .econom_clock_wrapper, .econom_cash_wrapper').animate({opacity: '0'}, 1000);
     // });
-   
+
 });
