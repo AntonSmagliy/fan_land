@@ -647,7 +647,7 @@ header h1 {
 
 @media all and (max-width: 765px) {
   #black_sec .big__black_abs .black_list .image_prev .fonts_image img {
-    width: 30px;
+    width: 40px;
   }
   #black_sec .big__black_abs .black_list .econom_cash .money_img img {
     width: 50px;
