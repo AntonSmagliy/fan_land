@@ -305,7 +305,7 @@ header h1 {
 }
 
 #rememb:hover {
-  background: url(../img/color_re.png) no-repeat 24.4% 50%/cover;
+  background: url(../img/5-layersfinwww.png) no-repeat 24.8% 50%/cover;
 }
 
 @media all and (max-width: 800px) {
@@ -314,7 +314,7 @@ header h1 {
   }
 }
 #rememb {
-  background: url(../img/4-layers.png) no-repeat 50% 50%/cover;
+  background: url(../img/4-layers.png) no-repeat 48% 50%/cover;
   height: 990px;
   position: relative;
 }
